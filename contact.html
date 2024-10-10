@@ -135,13 +135,21 @@
                 <br>
                 <br>
                 <br>
-                <a class="b1" href="">Send</a>
+                <a class="b1" href="javascript:void(0)">Send</a>
           
             </div>
 
     </div>
 
-
+    <script>
+      document.querySelector(".b1").addEventListener("click", function() {
+          alert("Message Sent");
+          document.querySelector(".i1").value = "";
+        
+        // Clear the message textarea
+        document.querySelector(".t1").value = "";
+      });
+  </script>
 
 
 

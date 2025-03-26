@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="project.css">
 </head>
 <style>
     
@@ -40,13 +41,13 @@
   {
     color: white;
   }
-  .i1:focus{
+  /* .i1:focus{
     
    
     
     outline-color:yellow;
     outline-style: solid;
-  }
+  } */
   .t1:focus{
     
    
@@ -92,10 +93,15 @@
   
 </style>
 <body style="background-color: black;">
+  <div class="Heading">
+    <h1 >Contact Me </h1>
+    <hr >
+</div>
+  
     <div class="firstdiv">
 
             <div class="leftdiv">
-                <br><br><br><br><br><br>
+                <br><br>
                 <h1 id="h1">Let's Connect</h1>
                 
                 <p style="color: rgb(138, 133, 133); font-family: Arial, Helvetica, sans-serif;">Connect with me today through social media or by filling in the contact form.</p>
@@ -103,10 +109,10 @@
                 <br>
                 <br>
                 <div style="display:inline-flex;">
-                    <img id="img1" src="instagram.jpeg" alt="">
-                    <img  id="img2" src="image.png" alt="">
-                    <img  id="img2" src="image (1).png" alt="">
-                    <img  id="img2" src="image (2).png" alt="">
+                    <a href="https://www.instagram.com/vinit_sittu_?igsh=MXBodWlzOHAxOHJ4dg==" ><img id="img1" src="Images/instagram.jpeg" alt=""</a>
+                    <a href="https://www.linkedin.com/in/vkm270503/"><img  id="img2" src="Images/image.png" alt=""></a>
+                    <a href="https://github.com/vinitsittu"><img  id="img2" src="Images/image (1).png" alt=""></a>
+                    <a href="https://discord.com/channels/@me/1248362751659737204"><img  id="img2" src="Images/image (2).png" alt=""></a>
 
 
                 </div>
@@ -119,23 +125,33 @@
             <div class="rightdiv">
                 <h4 style="color: white;font-style:initial; font-family: Arial, Helvetica, sans-serif;">Email</h4>
                 <!-- <textarea name="" id="">user@gmail.com</textarea> -->
-                <input class="i1" style="border-width: 1px; padding-left: 15px; border-color:yellow; border-style: solid; border-radius: 5px; height: 6%; width: 70%; color:rgb(250, 244, 244); background-color: rgb(16, 16, 16);" placeholder="  johndoe@gmail.com"  aria-describedby=":r0:-form-item-description" aria-invalid="false" type="text" value="" name="email" data-listener-added_aebb588c="true">
+                <input class="t1" style="border-width: 1px; padding-left: 15px; border-color:yellow; border-style: solid; border-radius: 5px; height: 6%; width: 70%; color:rgb(250, 244, 244); background-color: rgb(16, 16, 16);" placeholder="  johndoe@gmail.com"  aria-describedby=":r0:-form-item-description" aria-invalid="false" type="text" value="" name="email" data-listener-added_aebb588c="true">
                 <br>
                 <h4 style="color: white;font-style:initial; font-family: Arial, Helvetica, sans-serif;">Message</h4>
                 <!-- <textarea name="" id="">user@gmail.com</textarea> -->
                 <!-- <br> -->
                 
-                <textarea class="t1"  style="border-width: 1px; padding-top: 15px; padding-left: 15px; border-color:yellow; border-style: solid; border-radius: 30px; height: 100px; width: 70%; color:rgb(250, 244, 244); background-color: rgb(16, 16, 16);" name="message" id=""></textarea>
+                <textarea class="t1"  style="border-width: 1px; padding-top: 15px; padding-left: 15px; border-color:yellow; border-style: solid; border-radius: 30px; height: 100px; width: 70%; color:rgb(250, 244, 244); background-color: rgb(16, 16, 16);" name="message" value="" id=""></textarea>
                 <br>
                 <br>
                 <br>
-                <a class="b1" href="/">Send</a>
+                <a class="b1" href="javascript:void(0)">Send</a>
           
             </div>
 
     </div>
 
-
+    <script>
+      document.querySelector(".b1").addEventListener("click", function() {
+          alert("Message Sent");
+      //  document.querySelector(".i1").value = "";
+        
+        
+        document.querySelectorAll(".t1").forEach((element)=>{
+          element.value = "";
+        })
+      });
+  </script>
 
 
 
